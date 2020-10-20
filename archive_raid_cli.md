@@ -120,3 +120,6 @@ lrwxrwxrwx 1 root root       7 Sep 23 22:40 crypt_archive_vg-archivelv -> ../dm-
 lrwxrwxrwx 1 root root       7 Sep 23 22:22 sda6_crypt -> ../dm-0
 lrwxrwxrwx 1 root root       7 Sep 23 22:22 vgubuntu-root -> ../dm-1
 lrwxrwxrwx 1 root root       7 Sep 23 22:22 vgubuntu-swap_1 -> ../dm-2
+
+cryptsetup luksOpen /dev/md/llyr\:archive crypt_archive
+mount /dev/mapper/crypt_archive_vg-archivelv /archive
